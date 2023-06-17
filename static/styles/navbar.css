@@ -1,0 +1,27 @@
+.navbar {
+  background: var(--magnet);
+  background: var(--tinder-gradient);
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 2em;
+  color: var(--white);
+  padding: 0.7em 1em;
+}
+
+.nav-box {
+  display: flex;
+  align-items: center;
+  column-gap: 1em;
+}
+
+.nav-title {
+  font-size: 1.2rem;
+}
+
+.nav-box > a,
+.login-box > a {
+  text-decoration: none;
+  color: var(--white);
+}

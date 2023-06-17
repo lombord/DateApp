@@ -1,0 +1,36 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block link %}
+  <link rel="stylesheet" href="{% static 'base_app/styles/profile.css' %}">
+{% endblock link %}
+{% block style %}
+  </style>
+{% endblock style %}
+{% block title %}
+  {{ profile }}
+{% endblock title %}
+{% block content %}
+  <div class="container profile-box">
+    <h2 class="profile-title">{{ profile }}</h2>
+    <ul class="info-list">
+      <li>
+        <span class="info-name">Name</span><span class="info-span">{{ profile.name }}</span>
+      </li>
+      <li>
+        <span class="info-name">Surname</span><span class="info-span">{{ profile.surname }}</span>
+      </li>
+      <li>
+        <span class="info-name">Age</span><span class="info-span">{{ profile.age }}</span>
+      </li>
+      <li>
+        <span class="info-name">Status</span><span class="info-span">{{ profile.get_status_display }}</span>
+      </li>
+      <li>
+        <span class="info-name">Salary</span><span class="info-span">{{ profile.salary }}$</span>
+      </li>
+      <li>
+        <p class="about-me">{{ profile.about }}</p>
+      </li>
+    </ul>
+  </div>
+{% endblock content %}

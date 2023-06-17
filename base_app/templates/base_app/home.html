@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block link %}
+  <link rel="stylesheet" href="{% static 'base_app/styles/home.css' %}">
+{% endblock link %}
+{% block title %}
+  Home
+{% endblock title %}
+{% block content %}
+  <main class="container profiles-box">
+    {% for profile in profiles %}
+      <div class="profile-box">
+        <h2>{{ profile }}</h2>
+        <p>{{ profile.get_status_display }}</p>
+        <div class="link-box">
+          <a class="gradient-btn" href="{% url 'profile' profile.pk %}">Profile</a>
+        </div>
+      </div>
+    {% endfor %}
+  </main>
+{% endblock content %}

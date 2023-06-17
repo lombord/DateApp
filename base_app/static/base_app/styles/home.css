@@ -1,0 +1,30 @@
+.profiles-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5em;
+}
+
+.profile-box {
+  line-height: 1.7em;
+  box-shadow: 0 0 0.2em var(--soft-shadow);
+  padding: 1.5em 1.7em;
+}
+
+.profile-box > h2 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  padding-bottom: 0.5em;
+}
+
+.profile-box > p {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.link-box {
+  text-align: right;
+  display: flex;
+  justify-content: right;
+}

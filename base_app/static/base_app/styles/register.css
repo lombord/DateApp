@@ -1,0 +1,43 @@
+.form-container {
+  box-shadow: 0 0 0.2em var(--soft-shadow);
+  padding: 2em;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
+}
+
+.form-box > div {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.form-box > div > label {
+  padding: 0.2em 0.5em;
+  font-weight: 500;
+  background: var(--orange-pink);
+  color: var(--white);
+  font-family: "Montserrat", sans-serif;
+}
+
+.form-box > div > .errorlist li {
+  font-weight: bold;
+  color: red;
+}
+
+.form-box > div > input {
+  padding: 0.5em 1em;
+}
+
+.btn-box {
+  display: block !important;
+  text-align: right;
+}
+
+.submit-btn {
+  padding: 0.5em 1em;
+  border: none;
+}

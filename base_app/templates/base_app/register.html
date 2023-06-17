@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% load static %}
+{% block link %}
+  <link rel="stylesheet" href="{% static 'base_app/styles/register.css' %}">
+{% endblock link %}
+{% block title %}
+  Register
+{% endblock title %}
+{% block content %}
+  <main>
+    <section class="container form-container">
+      <form action="" class="form-box" method="POST">
+        {% csrf_token %}
+        {{ form.as_div }}
+        <div class="btn-box">
+          <button class="submit-btn gradient-btn" type="submit">Create</button>
+        </div>
+      </form>
+    </section>
+  </main>
+{% endblock content %}
